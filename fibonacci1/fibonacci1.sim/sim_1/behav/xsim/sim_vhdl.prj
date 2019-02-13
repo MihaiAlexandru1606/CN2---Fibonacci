@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fibonacci1.srcs/sources_1/new/bcdToBinary.vhd" \
+"../../../../fibonacci1.srcs/sources_1/new/cla4bit.vhd" \
+"../../../../fibonacci1.srcs/sources_1/new/cla8bit.vhd" \
+"../../../../fibonacci1.srcs/sources_1/new/fibonacci.vhd" \
+"../../../../fibonacci1.srcs/sim_1/new/sim.vhd" \
+
+# Do not sort compile order
+nosort

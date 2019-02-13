@@ -1,0 +1,319 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Nov 16 21:29:26 2018
+# Process ID: 2924
+# Current directory: C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.runs/synth_1
+# Command line: vivado.exe -log toplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+# Log file: C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.runs/synth_1/toplevel.vds
+# Journal file: C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source toplevel.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 287.891 ; gain = 57.664
+Command: synth_design -top toplevel -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 397.684 ; gain = 97.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/toplevel.vhd:16]
+INFO: [Synth 8-3491] module 'divizor' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/divizor.vhd:5' bound to instance 'ceas' of component 'divizor' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/toplevel.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'divizor' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/divizor.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'divizor' (1#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/divizor.vhd:12]
+INFO: [Synth 8-3491] module 'fibonacci' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/fibonacci.vhd:25' bound to instance 'fib' of component 'fibonacci' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/toplevel.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'fibonacci' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/fibonacci.vhd:33]
+INFO: [Synth 8-3491] module 'bcdToBinary' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/bcdToBinary.vhd:26' bound to instance 'conv' of component 'bcdToBinary' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/fibonacci.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'bcdToBinary' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/bcdToBinary.vhd:33]
+INFO: [Synth 8-3491] module 'cla8bit' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla8bit.vhd:13' bound to instance 'add1' of component 'cla8bit' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/bcdToBinary.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'cla8bit' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla8bit.vhd:23]
+INFO: [Synth 8-3491] module 'cla4bit' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla4bit.vhd:13' bound to instance 'adder_4bit1' of component 'cla4bit' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla8bit.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'cla4bit' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla4bit.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'cla4bit' (2#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla4bit.vhd:23]
+INFO: [Synth 8-3491] module 'cla4bit' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla4bit.vhd:13' bound to instance 'adder_4bit2' of component 'cla4bit' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla8bit.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'cla8bit' (3#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla8bit.vhd:23]
+INFO: [Synth 8-3491] module 'cla8bit' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/cla8bit.vhd:13' bound to instance 'add2' of component 'cla8bit' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/bcdToBinary.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'bcdToBinary' (4#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/bcdToBinary.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'fibonacci' (5#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/fibonacci.vhd:33]
+INFO: [Synth 8-3491] module 'myzcb' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/myzcb.vhd:26' bound to instance 'display' of component 'myzcb' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/toplevel.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'myzcb' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/myzcb.vhd:35]
+INFO: [Synth 8-3491] module 'zcb' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/zcb.vhd:31' bound to instance 'comp1' of component 'zcb' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/myzcb.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'zcb' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/zcb.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'zcb' (6#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/zcb.vhd:38]
+INFO: [Synth 8-3491] module 'zcb' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/zcb.vhd:31' bound to instance 'comp2' of component 'zcb' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/myzcb.vhd:49]
+INFO: [Synth 8-3491] module 'zcb' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/zcb.vhd:31' bound to instance 'comp3' of component 'zcb' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/myzcb.vhd:50]
+INFO: [Synth 8-3491] module 'zcb' declared at 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/zcb.vhd:31' bound to instance 'comp4' of component 'zcb' [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/myzcb.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'myzcb' (7#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/myzcb.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (8#1) [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/toplevel.vhd:16]
+WARNING: [Synth 8-3331] design toplevel has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 450.824 ; gain = 150.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 450.824 ; gain = 150.625
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mihai/Downloads/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/mihai/Downloads/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mihai/Downloads/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/toplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 795.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 795.094 ; gain = 494.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 795.094 ; gain = 494.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 795.094 ; gain = 494.895
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/divizor.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 795.094 ; gain = 494.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 16    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cla4bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
+Module bcdToBinary 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module fibonacci 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module myzcb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element ceas/counter_reg was removed.  [C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.srcs/sources_1/new/divizor.vhd:21]
+WARNING: [Synth 8-3917] design toplevel has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design toplevel has port AN[4] driven by constant 1
+WARNING: [Synth 8-3331] design toplevel has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 795.094 ; gain = 494.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 795.094 ; gain = 494.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 795.094 ; gain = 494.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:05 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     1|
+|4     |LUT2   |    13|
+|5     |LUT3   |     3|
+|6     |LUT4   |     4|
+|7     |LUT5   |     6|
+|8     |LUT6   |    32|
+|9     |FDRE   |    20|
+|10    |IBUF   |     9|
+|11    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   110|
+|2     |  ceas   |divizor |    73|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:06 . Memory (MB): peak = 811.586 ; gain = 511.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:50 . Memory (MB): peak = 811.586 ; gain = 167.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 811.586 ; gain = 511.387
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:13 . Memory (MB): peak = 814.418 ; gain = 526.527
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mihai/Desktop/CN2/Lab/Lab 2/fibonacci1/fibonacci1.runs/synth_1/toplevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 814.418 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 16 21:30:57 2018...
